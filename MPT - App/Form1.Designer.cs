@@ -1,6 +1,6 @@
 ﻿namespace MPT___App
 {
-    partial class Form1
+    partial class MPT
     {
         /// <summary>
         /// Required designer variable.
@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Profielen = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Speel = new System.Windows.Forms.Button();
+            this.ProfielenButton = new System.Windows.Forms.Button();
+            this.FaqButton = new System.Windows.Forms.Button();
+            this.VerkenButton = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
-            this.Spelen = new System.Windows.Forms.Button();
-            this.Profiel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Profielen
+            // ProfielenButton
             // 
-            this.Profielen.Location = new System.Drawing.Point(345, 251);
-            this.Profielen.Name = "Profielen";
-            this.Profielen.Size = new System.Drawing.Size(167, 69);
-            this.Profielen.TabIndex = 0;
-            this.Profielen.Text = "Profielen";
-            this.Profielen.UseVisualStyleBackColor = true;
+            this.ProfielenButton.Location = new System.Drawing.Point(345, 251);
+            this.ProfielenButton.Name = "ProfielenButton";
+            this.ProfielenButton.Size = new System.Drawing.Size(167, 69);
+            this.ProfielenButton.TabIndex = 0;
+            this.ProfielenButton.Text = "Profielen";
+            this.ProfielenButton.UseVisualStyleBackColor = true;
+            this.ProfielenButton.Click += new System.EventHandler(this.ProfielenButton_Click);
             // 
-            // button2
+            // FaqButton
             // 
-            this.button2.Location = new System.Drawing.Point(345, 354);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 69);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "FAQ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.FaqButton.Location = new System.Drawing.Point(345, 354);
+            this.FaqButton.Name = "FaqButton";
+            this.FaqButton.Size = new System.Drawing.Size(167, 69);
+            this.FaqButton.TabIndex = 1;
+            this.FaqButton.Text = "FAQ";
+            this.FaqButton.UseVisualStyleBackColor = true;
+            this.FaqButton.Click += new System.EventHandler(this.FaqButton_Click);
             // 
-            // Speel
+            // VerkenButton
             // 
-            this.Speel.Location = new System.Drawing.Point(345, 153);
-            this.Speel.Name = "Speel";
-            this.Speel.Size = new System.Drawing.Size(167, 69);
-            this.Speel.TabIndex = 2;
-            this.Speel.Text = "Speel";
-            this.Speel.UseVisualStyleBackColor = true;
-            this.Speel.Click += new System.EventHandler(this.button3_Click);
+            this.VerkenButton.Location = new System.Drawing.Point(345, 153);
+            this.VerkenButton.Name = "VerkenButton";
+            this.VerkenButton.Size = new System.Drawing.Size(167, 69);
+            this.VerkenButton.TabIndex = 2;
+            this.VerkenButton.Text = "Verken";
+            this.VerkenButton.UseVisualStyleBackColor = true;
+            this.VerkenButton.Click += new System.EventHandler(this.VerkenButton_Click);
             // 
             // WelcomeLabel
             // 
@@ -74,38 +74,18 @@
             this.WelcomeLabel.TabIndex = 3;
             this.WelcomeLabel.Text = "Welkom!";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.WelcomeLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Spelen
-            // 
-            this.Spelen.Location = new System.Drawing.Point(345, 153);
-            this.Spelen.Name = "Spelen";
-            this.Spelen.Size = new System.Drawing.Size(167, 69);
-            this.Spelen.TabIndex = 2;
-            this.Spelen.Text = "Speel";
-            this.Spelen.UseVisualStyleBackColor = true;
-            this.Spelen.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // Profiel
-            // 
-            this.Profiel.Location = new System.Drawing.Point(345, 251);
-            this.Profiel.Name = "Profiel";
-            this.Profiel.Size = new System.Drawing.Size(167, 69);
-            this.Profiel.TabIndex = 0;
-            this.Profiel.Text = "Profielen";
-            this.Profiel.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // MPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 532);
             this.Controls.Add(this.WelcomeLabel);
-            this.Controls.Add(this.Speel);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Profielen);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.VerkenButton);
+            this.Controls.Add(this.FaqButton);
+            this.Controls.Add(this.ProfielenButton);
+            this.Name = "MPT";
+            this.Text = "MPT";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,9 +94,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Speel;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Profielen;
+        private System.Windows.Forms.Button VerkenButton;
+        private System.Windows.Forms.Button FaqButton;
+        private System.Windows.Forms.Button ProfielenButton;
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Button Profiel;
     }

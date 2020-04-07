@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MPT___App
 {
-    public partial class Form1 : Form
+    public partial class MPT : Form
     {
-        public Form1()
+        public MPT()
         {
             InitializeComponent();
         }
@@ -21,15 +21,22 @@ namespace MPT___App
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
+ 
+        private void VerkenButton_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("Start verkenning!");
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
 
+
+        private void FaqButton_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("FAQ ME!");
+        }
+
+        private void ProfielenButton_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Check profielen!");
         }
     }
 }
