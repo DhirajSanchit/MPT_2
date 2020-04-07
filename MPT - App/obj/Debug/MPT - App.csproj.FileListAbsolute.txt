@@ -1,0 +1,9 @@
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\bin\Debug\MPT - App.exe.config
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\bin\Debug\MPT - App.exe
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\bin\Debug\MPT - App.pdb
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.csprojAssemblyReference.cache
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.Properties.Resources.resources
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.csproj.GenerateResource.cache
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.csproj.CoreCompileInputs.cache
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.exe
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.pdb
