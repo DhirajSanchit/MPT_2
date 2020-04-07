@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.aaaaaa = new System.Windows.Forms.HelpProvider();
+           
             this.SuspendLayout();
             // 
             // Form2
