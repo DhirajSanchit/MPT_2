@@ -7,5 +7,5 @@ C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.cspro
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.csproj.CoreCompileInputs.cache
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.exe
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.pdb
-C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.Form2.resources
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.MPT.resources
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.ProfielenForm.resources
