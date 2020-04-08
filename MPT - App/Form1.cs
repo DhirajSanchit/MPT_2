@@ -52,23 +52,6 @@ namespace MPT___App
         }
 
 
-    
-
-        void Pr_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Form is gesloten, dus de variable moet weer naar null.
-            PF = null;  
-            Show();
-        }
-
-        void Games_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Form is gesloten, dus de variable moet weer naar null.
-            GamesMenu = null;
-            Show();
-        }
-
-
         public void GoTo(string form)
         {
             switch (form)
@@ -83,7 +66,7 @@ namespace MPT___App
                         GamesMenu = new GamesMenu();
 
                         //Geef het event mee als het form sluit
-                        GamesMenu.FormClosed += Games_FormClosed;
+                        GamesMenu.FormClosed += GamesMenu_FormClosed;
                     }
 
                     //Laat GamesMenu zien, met MPT als owner
@@ -122,5 +105,18 @@ namespace MPT___App
             }
         }
 
+        void Pr_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Form is gesloten, dus de variable moet weer naar null.
+            PF = null;
+            Show();
+        }
+
+        void GamesMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Form is gesloten, dus de variable moet weer naar null.
+            GamesMenu = null;
+            Show();
+        }
     }
 }

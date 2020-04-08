@@ -63,8 +63,7 @@
             this.TechGameBtn.Size = new System.Drawing.Size(169, 51);
             this.TechGameBtn.TabIndex = 2;
             this.TechGameBtn.Text = "Technology - Coming Soon!";
-            this.TechGameBtn.UseVisualStyleBackColor = true;
-            this.TechGameBtn.Click += new System.EventHandler(this.TechGameBtn_Click);
+            this.TechGameBtn.UseVisualStyleBackColor = true; 
             // 
             // BusnGameBtn
             // 
@@ -73,8 +72,7 @@
             this.BusnGameBtn.Size = new System.Drawing.Size(169, 51);
             this.BusnGameBtn.TabIndex = 3;
             this.BusnGameBtn.Text = "Business - Coming Soon!";
-            this.BusnGameBtn.UseVisualStyleBackColor = true;
-            this.BusnGameBtn.Click += new System.EventHandler(this.BusnGameBtn_Click);
+            this.BusnGameBtn.UseVisualStyleBackColor = true; 
             // 
             // InfraGameBtn
             // 
