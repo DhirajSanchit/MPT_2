@@ -35,6 +35,7 @@
             this.MediaProfiel = new System.Windows.Forms.Button();
             this.ProfielLabel = new System.Windows.Forms.Label();
             this.Terug = new System.Windows.Forms.Button();
+            this.Profielbeschrijving = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // SoftwareProfiel
@@ -65,6 +66,7 @@
             this.BusinessProfiel.TabIndex = 2;
             this.BusinessProfiel.Text = "BusinessProfiel";
             this.BusinessProfiel.UseVisualStyleBackColor = true;
+            this.BusinessProfiel.Click += new System.EventHandler(this.BusinessProfiel_Click);
             // 
             // InfrastructureProfiel
             // 
@@ -74,6 +76,7 @@
             this.InfrastructureProfiel.TabIndex = 3;
             this.InfrastructureProfiel.Text = "InfrastructureProfiel";
             this.InfrastructureProfiel.UseVisualStyleBackColor = true;
+            this.InfrastructureProfiel.Click += new System.EventHandler(this.InfrastructureProfiel_Click);
             // 
             // MediaProfiel
             // 
@@ -83,12 +86,13 @@
             this.MediaProfiel.TabIndex = 4;
             this.MediaProfiel.Text = "MediaProfiel";
             this.MediaProfiel.UseVisualStyleBackColor = true;
+            this.MediaProfiel.Click += new System.EventHandler(this.MediaProfiel_Click);
             // 
             // ProfielLabel
             // 
             this.ProfielLabel.AutoSize = true;
             this.ProfielLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.ProfielLabel.Location = new System.Drawing.Point(278, 13);
+            this.ProfielLabel.Location = new System.Drawing.Point(258, 9);
             this.ProfielLabel.Name = "ProfielLabel";
             this.ProfielLabel.Size = new System.Drawing.Size(185, 37);
             this.ProfielLabel.TabIndex = 5;
@@ -104,11 +108,21 @@
             this.Terug.UseVisualStyleBackColor = true;
             this.Terug.Click += new System.EventHandler(this.Terug_Click);
             // 
+            // Profielbeschrijving
+            // 
+            this.Profielbeschrijving.Location = new System.Drawing.Point(247, 69);
+            this.Profielbeschrijving.Name = "Profielbeschrijving";
+            this.Profielbeschrijving.Size = new System.Drawing.Size(207, 383);
+            this.Profielbeschrijving.TabIndex = 7;
+            this.Profielbeschrijving.Text = "";
+//            this.Profielbeschrijving.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
             // ProfielenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 488);
+            this.Controls.Add(this.Profielbeschrijving);
             this.Controls.Add(this.Terug);
             this.Controls.Add(this.ProfielLabel);
             this.Controls.Add(this.MediaProfiel);
@@ -116,7 +130,7 @@
             this.Controls.Add(this.BusinessProfiel);
             this.Controls.Add(this.TechnologyProfiel);
             this.Controls.Add(this.SoftwareProfiel);
-            this.Name = "Profielen";
+            this.Name = "ProfielenForm";
             this.Text = "Profielen";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +139,6 @@
 
 
         #endregion
-
         private System.Windows.Forms.Button SoftwareProfiel;
         private System.Windows.Forms.Button TechnologyProfiel;
         private System.Windows.Forms.Button BusinessProfiel;
@@ -133,5 +146,6 @@
         private System.Windows.Forms.Button MediaProfiel;
         private System.Windows.Forms.Label ProfielLabel;
         private System.Windows.Forms.Button Terug;
+        private System.Windows.Forms.RichTextBox Profielbeschrijving;
     }
 }
