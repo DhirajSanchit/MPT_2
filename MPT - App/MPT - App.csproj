@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SoftwareGame.resx">
       <DependentUpon>SoftwareGame.cs</DependentUpon>
@@ -105,6 +106,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111-1111653_photo-wallpaper-dark-screen-data-screen-source-software.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SE_CODING.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SE_Female.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software-engineer.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -75,6 +75,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::MPT___App.Properties.Resources.software_engineer;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(787, 212);
@@ -83,12 +84,14 @@
             // 
             // Vraaglbl
             // 
-            this.Vraaglbl.AutoSize = true;
-            this.Vraaglbl.Location = new System.Drawing.Point(179, 279);
+            this.Vraaglbl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Vraaglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vraaglbl.Location = new System.Drawing.Point(12, 262);
             this.Vraaglbl.Name = "Vraaglbl";
-            this.Vraaglbl.Size = new System.Drawing.Size(35, 13);
+            this.Vraaglbl.Size = new System.Drawing.Size(787, 47);
             this.Vraaglbl.TabIndex = 5;
-            this.Vraaglbl.Text = "label1";
+            this.Vraaglbl.Text = "Vraag";
+            this.Vraaglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Vraaglbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // SoftwareGame
@@ -106,7 +109,6 @@
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
