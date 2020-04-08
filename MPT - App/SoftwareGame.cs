@@ -84,8 +84,6 @@ namespace MPT___App
                 //Toon succes 
             }
 
- 
-
             vraagNummer++;
             stelVraag(vraagNummer);
 

@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MPT___App
@@ -97,15 +91,15 @@ namespace MPT___App
                 "verder automatiseren van beheertaken spelen een rol in de dagelijkse praktijk van een infrastructuurspecialist. " +
                 "Naast het managen van bestaande ICT-infrastructuren, kun je ook vanuit gestelde criteria " +
                 "en nieuwe technologie over een nieuwe infrastructuur adviseren, deze ontwerpen, testen en realiseren." +
-                "\n"+ 
-                "\n"+ 
+                "\n"+
+                "\n"+
                 "Na je opleiding kun je aan het werk als servicemanager, security officer, networkspecialist, " +
                 "cloudspecialist, cloud architect, cloud engineer of DevOps networkengineer"
             }
         };
 
 
-        public Dictionary<string, string>_profielData = new Dictionary<string, string>()
+        public Dictionary<string, string> _profielData = new Dictionary<string, string>()
         {
 
         };
@@ -119,12 +113,12 @@ namespace MPT___App
 
         }
 
-        
+
         private void TechnologyProfiel_Click(object sender, EventArgs e)
         {
             DisplayInfo("Technology");
         }
-         
+
         private void InfrastructureProfiel_Click(object sender, EventArgs e)
         {
             DisplayInfo("Infrastructure");
@@ -153,7 +147,7 @@ namespace MPT___App
         {
 
             switch (profiel)
-            {   
+            {
                 //Software info
                 case "Software":
                     ProfielLabel.Text = "Software";
