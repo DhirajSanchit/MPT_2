@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.TerugButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.TechnologyGameButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.SoftGameBtn = new System.Windows.Forms.Button();
+            this.TechGameBtn = new System.Windows.Forms.Button();
+            this.BusnGameBtn = new System.Windows.Forms.Button();
+            this.InfraGameBtn = new System.Windows.Forms.Button();
+            this.MediaGameBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TerugButton
@@ -46,65 +46,67 @@
             this.TerugButton.UseVisualStyleBackColor = true;
             this.TerugButton.Click += new System.EventHandler(this.TerugButton_Click);
             // 
-            // button1
+            // SoftGameBtn
             // 
-            this.button1.Location = new System.Drawing.Point(341, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 51);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Software";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SoftGameBtn.Location = new System.Drawing.Point(341, 99);
+            this.SoftGameBtn.Name = "SoftGameBtn";
+            this.SoftGameBtn.Size = new System.Drawing.Size(169, 51);
+            this.SoftGameBtn.TabIndex = 1;
+            this.SoftGameBtn.Text = "Software";
+            this.SoftGameBtn.UseVisualStyleBackColor = true;
+            this.SoftGameBtn.Click += new System.EventHandler(this.SoftwareGameButton_Click);
             // 
-            // TechnologyGameButton
+            // TechGameBtn
             // 
-            this.TechnologyGameButton.Location = new System.Drawing.Point(341, 156);
-            this.TechnologyGameButton.Name = "TechnologyGameButton";
-            this.TechnologyGameButton.Size = new System.Drawing.Size(169, 51);
-            this.TechnologyGameButton.TabIndex = 2;
-            this.TechnologyGameButton.Text = "Technology - Coming Soon!";
-            this.TechnologyGameButton.UseVisualStyleBackColor = true;
+            this.TechGameBtn.Location = new System.Drawing.Point(341, 156);
+            this.TechGameBtn.Name = "TechGameBtn";
+            this.TechGameBtn.Size = new System.Drawing.Size(169, 51);
+            this.TechGameBtn.TabIndex = 2;
+            this.TechGameBtn.Text = "Technology - Coming Soon!";
+            this.TechGameBtn.UseVisualStyleBackColor = true;
+            this.TechGameBtn.Click += new System.EventHandler(this.TechGameBtn_Click);
             // 
-            // button3
+            // BusnGameBtn
             // 
-            this.button3.Location = new System.Drawing.Point(341, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 51);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Business - Coming Soon!";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BusnGameBtn.Location = new System.Drawing.Point(341, 212);
+            this.BusnGameBtn.Name = "BusnGameBtn";
+            this.BusnGameBtn.Size = new System.Drawing.Size(169, 51);
+            this.BusnGameBtn.TabIndex = 3;
+            this.BusnGameBtn.Text = "Business - Coming Soon!";
+            this.BusnGameBtn.UseVisualStyleBackColor = true;
+            this.BusnGameBtn.Click += new System.EventHandler(this.BusnGameBtn_Click);
             // 
-            // button4
+            // InfraGameBtn
             // 
-            this.button4.Location = new System.Drawing.Point(341, 269);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(169, 51);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Infrastructure - Coming Soon!";
-            this.button4.UseVisualStyleBackColor = true;
+            this.InfraGameBtn.Location = new System.Drawing.Point(341, 269);
+            this.InfraGameBtn.Name = "InfraGameBtn";
+            this.InfraGameBtn.Size = new System.Drawing.Size(169, 51);
+            this.InfraGameBtn.TabIndex = 4;
+            this.InfraGameBtn.Text = "Infrastructure - Coming Soon!";
+            this.InfraGameBtn.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // MediaGameBtn
             // 
-            this.button5.Location = new System.Drawing.Point(341, 326);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(169, 51);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Media - Coming Soon!";
-            this.button5.UseVisualStyleBackColor = true;
+            this.MediaGameBtn.Location = new System.Drawing.Point(341, 326);
+            this.MediaGameBtn.Name = "MediaGameBtn";
+            this.MediaGameBtn.Size = new System.Drawing.Size(169, 51);
+            this.MediaGameBtn.TabIndex = 5;
+            this.MediaGameBtn.Text = "Media - Coming Soon!";
+            this.MediaGameBtn.UseVisualStyleBackColor = true;
             // 
             // GamesMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.TechnologyGameButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.MediaGameBtn);
+            this.Controls.Add(this.InfraGameBtn);
+            this.Controls.Add(this.BusnGameBtn);
+            this.Controls.Add(this.TechGameBtn);
+            this.Controls.Add(this.SoftGameBtn);
             this.Controls.Add(this.TerugButton);
             this.Name = "GamesMenu";
-            this.Text = "Form3";
+            this.Text = "GamesMenu";
             this.ResumeLayout(false);
 
         }
@@ -112,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.Button TerugButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button TechnologyGameButton;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button SoftGameBtn;
+        private System.Windows.Forms.Button TechGameBtn;
+        private System.Windows.Forms.Button BusnGameBtn;
+        private System.Windows.Forms.Button InfraGameBtn;
+        private System.Windows.Forms.Button MediaGameBtn;
     }
 }

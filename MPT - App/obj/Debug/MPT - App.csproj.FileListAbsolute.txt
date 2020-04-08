@@ -10,3 +10,5 @@ C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT - App.pdb
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.MPT.resources
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.ProfielenForm.resources
 C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.Games.resources
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.GamesMenu.resources
+C:\Users\gracious\Documents\GitHub\MPT\MPT_2\MPT - App\obj\Debug\MPT___App.SoftwareGame.resources

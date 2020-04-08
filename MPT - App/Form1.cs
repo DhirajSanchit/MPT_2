@@ -13,7 +13,7 @@ namespace MPT___App
     public partial class MPT : Form
     {
         //Todo: Gamesform namingconvention
-        private GamesMenu  Games;
+        private GamesMenu  GamesMenu;
         private ProfielenForm PF;
 
         //ToDo: FAQform maken
@@ -29,12 +29,12 @@ namespace MPT___App
 
         }
         
-        //Games form
+        //GamesMenu form
         private void VerkenButton_Click(object sender, EventArgs e)
         {
 
             //Console.WriteLine("Start verkenning!");
-            GoTo("Games");
+            GoTo("GamesMenu");
         }
 
         //Info voor de 5 profielen
@@ -64,7 +64,7 @@ namespace MPT___App
         void Games_FormClosed(object sender, FormClosedEventArgs e)
         {
             //Form is gesloten, dus de variable moet weer naar null.
-            PF = null;
+            GamesMenu = null;
             Show();
         }
 
@@ -73,21 +73,21 @@ namespace MPT___App
         {
             switch (form)
             {
-                //Games
-                case "Games": 
+                //GamesMenu
+                case "GamesMenu": 
 
                     //Form instance als deze er nog niet is
-                    if (Games == null)
+                    if (GamesMenu == null)
                     {
                         //Instantieer form 
-                        Games = new GamesMenu();
+                        GamesMenu = new GamesMenu();
 
                         //Geef het event mee als het form sluit
-                        Games.FormClosed += Games_FormClosed;
+                        GamesMenu.FormClosed += Games_FormClosed;
                     }
 
-                    //Laat Games zien, met MPT als owner
-                    Games.Show(this);
+                    //Laat GamesMenu zien, met MPT als owner
+                    GamesMenu.Show(this);
                     Hide();
                     break; 
 

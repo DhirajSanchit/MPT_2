@@ -24,6 +24,12 @@ namespace MPT___App
         public SoftwareGame()
         {
             InitializeComponent();
+
+
+
+            stelVraag(vraagNummer);
+
+            vragenTotaal = 5;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,7 +42,17 @@ namespace MPT___App
         //Check het antwoord
         private void checkAntwoordEvent(object sender, EventArgs e)
         {
+            //Check welk object het event stuurt
+            var senderObject = (Button)sender;
 
+            int buttonTag = Convert.ToInt32(senderObject.Tag);
+
+            if(buttonTag == goedAntwoord)
+            {
+                vraagNummer++;
+                stelVraag(vraagNummer);
+
+            }
         }
 
         private void stelVraag(int vraagnr)
@@ -44,7 +60,7 @@ namespace MPT___App
             switch (vraagnr)
             {
                 case 1:
-                    pictureBox1.Image = Properties.Resources._111_1111653_photo_wallpaper_dark_screen_data_screen_source_software;
+                    pictureBox1.Image = Properties.Resources.software_engineer;
                     Vraaglbl.Text = "Vraag 1";
                     button1.Text = "antwoord1";
                     button2.Text = "antwoord2";

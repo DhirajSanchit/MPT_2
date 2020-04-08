@@ -23,7 +23,17 @@ namespace MPT___App
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SoftwareGameButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TechGameBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BusnGameBtn_Click(object sender, EventArgs e)
         {
 
         }
