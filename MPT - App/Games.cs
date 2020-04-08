@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace MPT___App
 {
-    public partial class Form3 : Form
+    public partial class Games : Form
     {
-        public Form3()
+        public Games()
         {
             InitializeComponent();
+        }
+
+        private void TerugButton_Click(object sender, EventArgs e)
+        {
+            Owner.Show();
+            this.Hide();
         }
     }
 }
