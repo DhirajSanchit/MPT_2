@@ -40,11 +40,11 @@
             // SoftGameBtn
             // 
             this.button1.Location = new System.Drawing.Point(133, 370);
-            this.button1.Name = "SoftGameBtn";
+            this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 49);
             this.button1.TabIndex = 0;
             this.button1.Tag = "1";
-            this.button1.Text = "SoftGameBtn";
+            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.checkAntwoordEvent);
             // 
@@ -62,11 +62,11 @@
             // BusnGameBtn
             // 
             this.button3.Location = new System.Drawing.Point(133, 456);
-            this.button3.Name = "BusnGameBtn";
+            this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 49);
             this.button3.TabIndex = 2;
             this.button3.Tag = "3";
-            this.button3.Text = "BusnGameBtn";
+            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.checkAntwoordEvent);
             // 
@@ -100,8 +100,7 @@
             this.Vraaglbl.Size = new System.Drawing.Size(787, 47);
             this.Vraaglbl.TabIndex = 5;
             this.Vraaglbl.Text = "Vraag";
-            this.Vraaglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Vraaglbl.Click += new System.EventHandler(this.label1_Click);
+            this.Vraaglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter; 
             // 
             // SoftwareGame
             // 
@@ -118,7 +117,6 @@
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

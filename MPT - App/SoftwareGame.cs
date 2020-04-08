@@ -31,11 +31,7 @@ namespace MPT___App
 
             vragenTotaal = 5;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+         
 
 
 
@@ -49,10 +45,20 @@ namespace MPT___App
 
             if(buttonTag == goedAntwoord)
             {
-                vraagNummer++;
-                stelVraag(vraagNummer);
+               //Doe iets
+            }
+
+            if(vraagNummer == vragenTotaal){
+                
+                //Toon succes
+
+
 
             }
+
+            vraagNummer++;
+            stelVraag(vraagNummer);
+
         }
 
         private void stelVraag(int vraagnr)
