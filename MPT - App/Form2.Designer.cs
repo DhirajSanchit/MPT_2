@@ -96,7 +96,7 @@
             this.ProfielLabel.Name = "ProfielLabel";
             this.ProfielLabel.Size = new System.Drawing.Size(185, 37);
             this.ProfielLabel.TabIndex = 5;
-            this.ProfielLabel.Text = "Placeholder";
+            this.ProfielLabel.Text = "Kies een profiel"; 
             // 
             // Terug
             // 
@@ -115,7 +115,6 @@
             this.Profielbeschrijving.Size = new System.Drawing.Size(207, 383);
             this.Profielbeschrijving.TabIndex = 7;
             this.Profielbeschrijving.Text = "";
-//            this.Profielbeschrijving.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // ProfielenForm
             // 
