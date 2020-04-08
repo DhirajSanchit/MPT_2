@@ -63,16 +63,6 @@ namespace MPT___App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _111_1111653_photo_wallpaper_dark_screen_data_screen_source_software {
-            get {
-                object obj = ResourceManager.GetObject("111-1111653_photo-wallpaper-dark-screen-data-screen-source-software", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
