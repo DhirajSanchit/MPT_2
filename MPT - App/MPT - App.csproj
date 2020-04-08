@@ -108,7 +108,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\111-1111653_photo-wallpaper-dark-screen-data-screen-source-software.jpg" />
+    <Content Include="Resources\vragen.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images %282%29.jpeg" />
