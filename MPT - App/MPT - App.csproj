@@ -108,6 +108,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Hangman_9.jpg" />
+    <None Include="Resources\Hangman_8.jpg" />
+    <None Include="Resources\Hangman_7.jpg" />
+    <None Include="Resources\Hangman_6.jpg" />
+    <None Include="Resources\Hangman_5.jpg" />
+    <None Include="Resources\Hangman_4.jpg" />
+    <None Include="Resources\Hangman_3.jpg" />
+    <None Include="Resources\Hangman_2.jpg" />
+    <None Include="Resources\Hangman_1.jpg" />
+    <None Include="Resources\Hangman_0.jpg" />
     <Content Include="Resources\vragen.jpeg" />
   </ItemGroup>
   <ItemGroup>

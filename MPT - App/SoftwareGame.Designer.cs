@@ -28,16 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoftwareGame));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.QuestionImageBox = new System.Windows.Forms.PictureBox();
             this.Vraaglbl = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.HangmanImgBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionImageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HangmanImgBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // SoftGameBtn
+            // button1
             // 
             this.button1.Location = new System.Drawing.Point(133, 370);
             this.button1.Name = "button1";
@@ -59,7 +62,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.checkAntwoordEvent);
             // 
-            // BusnGameBtn
+            // button3
             // 
             this.button3.Location = new System.Drawing.Point(133, 456);
             this.button3.Name = "button3";
@@ -81,15 +84,15 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.checkAntwoordEvent);
             // 
-            // pictureBox1
+            // QuestionImageBox
             // 
-            this.pictureBox1.Image = global::MPT___App.Properties.Resources.software_engineer;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(787, 337);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.QuestionImageBox.Image = global::MPT___App.Properties.Resources.software_engineer;
+            this.QuestionImageBox.Location = new System.Drawing.Point(12, 12);
+            this.QuestionImageBox.Name = "QuestionImageBox";
+            this.QuestionImageBox.Size = new System.Drawing.Size(429, 296);
+            this.QuestionImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.QuestionImageBox.TabIndex = 4;
+            this.QuestionImageBox.TabStop = false;
             // 
             // Vraaglbl
             // 
@@ -100,23 +103,36 @@
             this.Vraaglbl.Size = new System.Drawing.Size(787, 47);
             this.Vraaglbl.TabIndex = 5;
             this.Vraaglbl.Text = "Vraag";
-            this.Vraaglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter; 
+            this.Vraaglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // HangmanImgBox
+            // 
+            this.HangmanImgBox.Image = ((System.Drawing.Image)(resources.GetObject("HangmanImgBox.Image")));
+            this.HangmanImgBox.Location = new System.Drawing.Point(554, 13);
+            this.HangmanImgBox.Name = "HangmanImgBox";
+            this.HangmanImgBox.Size = new System.Drawing.Size(234, 295);
+            this.HangmanImgBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.HangmanImgBox.TabIndex = 6;
+            this.HangmanImgBox.TabStop = false;
             // 
             // SoftwareGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 517);
+            this.Controls.Add(this.HangmanImgBox);
             this.Controls.Add(this.Vraaglbl);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.QuestionImageBox);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "SoftwareGame";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionImageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HangmanImgBox)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -125,7 +141,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox QuestionImageBox;
         private System.Windows.Forms.Label Vraaglbl;
+        private System.Windows.Forms.PictureBox HangmanImgBox;
     }
 }

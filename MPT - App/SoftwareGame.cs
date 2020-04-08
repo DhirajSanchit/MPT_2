@@ -17,9 +17,28 @@ namespace MPT___App
         int goedAntwoord;
         int vraagNummer=1;
         //int score
+        int HangmanStatus;
         int percentage;
         int vragenTotaal;
+        int Dead;
 
+        //Bitmap Array gevuld met Hangman images
+        public Bitmap[] HangmanStatusImages =
+        {
+            Properties.Resources.Hangman_0,
+            Properties.Resources.Hangman_1,
+            Properties.Resources.Hangman_2,
+            Properties.Resources.Hangman_3,
+            Properties.Resources.Hangman_4,
+            Properties.Resources.Hangman_5,
+            Properties.Resources.Hangman_6,
+            Properties.Resources.Hangman_7,
+            Properties.Resources.Hangman_8,
+            Properties.Resources.Hangman_9,
+
+        };
+
+        
 
         public SoftwareGame()
         {
@@ -30,8 +49,10 @@ namespace MPT___App
             stelVraag(vraagNummer);
 
             vragenTotaal = 5;
+            Dead = (int)HangmanStatusImages.Count() -1;
+
         }
-         
+
 
 
 
@@ -46,15 +67,24 @@ namespace MPT___App
             if(buttonTag == goedAntwoord)
             {
                //Doe iets
+
             }
 
+            //Fout antwoord, hangman krijgt een lijntj
+            if (buttonTag != goedAntwoord && HangmanStatus != Dead)
+            {
+ 
+                    HangmanStatus++;
+                    HangmanImgBox.Image = HangmanStatusImages[HangmanStatus];
+            }
+
+            //Alle vragen gehad
             if(vraagNummer == vragenTotaal){
-                
-                //Toon succes
-
-
-
+  
+                //Toon succes 
             }
+
+ 
 
             vraagNummer++;
             stelVraag(vraagNummer);
@@ -66,7 +96,7 @@ namespace MPT___App
             switch (vraagnr)
             {
                 case 1:
-                    pictureBox1.Image = Properties.Resources.software_engineer;
+                    QuestionImageBox.Image = Properties.Resources.software_engineer;
                     Vraaglbl.Text = "Vraag 1";
                     button1.Text = "antwoord1";
                     button2.Text = "antwoord2";
@@ -76,7 +106,7 @@ namespace MPT___App
                 break;
 
                 case 2:
-                    pictureBox1.Image = Properties.Resources.images__2_;
+                    QuestionImageBox.Image = Properties.Resources.images__2_;
                     Vraaglbl.Text = "Vraag 2";
                     button1.Text = "antwoord1";
                     button2.Text = "antwoord2";
@@ -86,7 +116,7 @@ namespace MPT___App
                     break;
 
                 case 3:
-                    pictureBox1.Image = Properties.Resources.SE_Female;
+                    QuestionImageBox.Image = Properties.Resources.SE_Female;
                     Vraaglbl.Text = "Vraag 3";
                     button1.Text = "antwoord1";
                     button2.Text = "antwoord2";
@@ -96,7 +126,7 @@ namespace MPT___App
                     break;
 
                 case 4:
-                    pictureBox1.Image = Properties.Resources.software_engineer;
+                    QuestionImageBox.Image = Properties.Resources.software_engineer;
                     Vraaglbl.Text = "Vraag 4";
                     button1.Text = "antwoord1";
                     button2.Text = "antwoord2";
@@ -106,7 +136,7 @@ namespace MPT___App
                     break;
 
                 case 5:
-                    pictureBox1.Image = Properties.Resources.images;
+                    QuestionImageBox.Image = Properties.Resources.images;
                     Vraaglbl.Text = "Vraag 5";
                     button1.Text = "antwoord1";
                     button2.Text = "antwoord2";
@@ -116,5 +146,7 @@ namespace MPT___App
                     break;
             }
         }
+
+ 
     }
 }
