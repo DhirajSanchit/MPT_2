@@ -92,11 +92,11 @@
             // 
             this.ProfielLabel.AutoSize = true;
             this.ProfielLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.ProfielLabel.Location = new System.Drawing.Point(258, 9);
+            this.ProfielLabel.Location = new System.Drawing.Point(240, 9);
             this.ProfielLabel.Name = "ProfielLabel";
-            this.ProfielLabel.Size = new System.Drawing.Size(185, 37);
+            this.ProfielLabel.Size = new System.Drawing.Size(235, 37);
             this.ProfielLabel.TabIndex = 5;
-            this.ProfielLabel.Text = "Kies een profiel"; 
+            this.ProfielLabel.Text = "Kies een profiel";
             // 
             // Terug
             // 
