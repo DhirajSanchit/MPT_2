@@ -13,7 +13,7 @@ namespace MPT___App
     public partial class MPT : Form
     {
         //Todo: Gamesform namingconvention
-        private Games  Games;
+        private GamesMenu  Games;
         private ProfielenForm PF;
 
         //ToDo: FAQform maken
@@ -80,7 +80,7 @@ namespace MPT___App
                     if (Games == null)
                     {
                         //Instantieer form 
-                        Games = new Games();
+                        Games = new GamesMenu();
 
                         //Geef het event mee als het form sluit
                         Games.FormClosed += Games_FormClosed;

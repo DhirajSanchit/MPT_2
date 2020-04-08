@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MPT___App
 {
-    public partial class Games : Form
+    public partial class GamesMenu : Form
     {
-        public Games()
+        public GamesMenu()
         {
             InitializeComponent();
         }
@@ -21,6 +21,11 @@ namespace MPT___App
         {
             Owner.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
