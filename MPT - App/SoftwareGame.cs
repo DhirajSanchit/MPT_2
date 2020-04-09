@@ -106,8 +106,9 @@ namespace MPT___App
 
             if(HangmanStatus == Dead)
             {
+                percentage = (int)Math.Round((double)(score * 100) / vragenTotaal);
 
-                 MessageBox.Show(
+                MessageBox.Show(
                     "Game Over!" + Environment.NewLine +
                     "Je hebt " + score + " vragen goed beantwoord!" + Environment.NewLine +
                     "Je cijfer is " + percentage + "%" + Environment.NewLine +
@@ -195,9 +196,9 @@ namespace MPT___App
                 case 6:
                     Vraaglbl.Text = "Is er een verschil tussen Software developper en engineer?";
                     button1.Text = "Nee, ze doen hetzelfde";
-                    button2.Text = "Ja?";
+                    button2.Text = "Ja, maar dat bevindt zich steeds meer in een grijs gebied";
                     button3.Text = "Nee, Het zijn synoniemen";
-                    button4.Text = "Ja, een engineer houdt zich met meer bezig";
+                    button4.Text = "Ja, een engineer creeert oplossingen, een developper ontwikkelt voornamelijk";
                     goedAntwoord = 2;
                     break;
 
@@ -219,18 +220,18 @@ namespace MPT___App
                     button2.Text = "Soft skills: Een open-mind en will om te leren";
                     button3.Text = "Test skills: Hoe zorg jij ervoor dat de kwaliteit maximaal is?";
                     button4.Text = "Alle 3";
-                    goedAntwoord = 2;
+                    goedAntwoord = 4;
                     break;
 
                 case 9:
 //                  QuestionImageBox.Image =Properties.Resources.images;
-                    Vraaglbl.Text = "Wat is de definitie van een 'bool'?"; 
-                    button1.Text = "een afkorting van het wordt boolean";
+                    Vraaglbl.Text = "Wat is de definitie van een 'bool'?";
+                    button1.Text = " Een data type met maar twee " +
+                        "mogelijke waarden; true en false";
                     button2.Text = "Wat developpers tegen elkaar roepen als iemand onzin praat";
                     button3.Text = "Een variabele die niet veranderbaar is";
-                    button4.Text = " Een data type met maar twee " +
-                        "mogelijke waarden; true en false";
-                    goedAntwoord = 4;
+                    button4.Text = "Een afkorting van het wordt boolean"; ;
+                    goedAntwoord = 1;
                     break;
                 
                 //Strikvraag
@@ -272,7 +273,7 @@ namespace MPT___App
                     break;
 
                 case 13:
-                    Vraaglbl.Text = "In welk jaar is de programmeertaal 'C' ";
+                    Vraaglbl.Text = "In welk jaar is de programmeertaal 'C' uitgevonden ";
                     button1.Text = "1992";
                     button2.Text = "1982";
                     button3.Text = "1972";
