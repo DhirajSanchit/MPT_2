@@ -33,10 +33,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.QuestionImageBox = new System.Windows.Forms.PictureBox();
             this.Vraaglbl = new System.Windows.Forms.Label();
             this.HangmanImgBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.QuestionImageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HangmanImgBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,23 +82,13 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.checkAntwoordEvent);
             // 
-            // QuestionImageBox
-            // 
-            this.QuestionImageBox.Image = global::MPT___App.Properties.Resources.software_engineer;
-            this.QuestionImageBox.Location = new System.Drawing.Point(12, 12);
-            this.QuestionImageBox.Name = "QuestionImageBox";
-            this.QuestionImageBox.Size = new System.Drawing.Size(429, 296);
-            this.QuestionImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.QuestionImageBox.TabIndex = 4;
-            this.QuestionImageBox.TabStop = false;
-            // 
             // Vraaglbl
             // 
             this.Vraaglbl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Vraaglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vraaglbl.Location = new System.Drawing.Point(12, 311);
+            this.Vraaglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vraaglbl.Location = new System.Drawing.Point(-12, 264);
             this.Vraaglbl.Name = "Vraaglbl";
-            this.Vraaglbl.Size = new System.Drawing.Size(787, 47);
+            this.Vraaglbl.Size = new System.Drawing.Size(787, 94);
             this.Vraaglbl.TabIndex = 5;
             this.Vraaglbl.Text = "Vraag";
             this.Vraaglbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,9 +96,9 @@
             // HangmanImgBox
             // 
             this.HangmanImgBox.Image = ((System.Drawing.Image)(resources.GetObject("HangmanImgBox.Image")));
-            this.HangmanImgBox.Location = new System.Drawing.Point(554, 13);
+            this.HangmanImgBox.Location = new System.Drawing.Point(156, 12);
             this.HangmanImgBox.Name = "HangmanImgBox";
-            this.HangmanImgBox.Size = new System.Drawing.Size(234, 295);
+            this.HangmanImgBox.Size = new System.Drawing.Size(501, 249);
             this.HangmanImgBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.HangmanImgBox.TabIndex = 6;
             this.HangmanImgBox.TabStop = false;
@@ -122,14 +110,12 @@
             this.ClientSize = new System.Drawing.Size(811, 517);
             this.Controls.Add(this.HangmanImgBox);
             this.Controls.Add(this.Vraaglbl);
-            this.Controls.Add(this.QuestionImageBox);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "SoftwareGame";
-            this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.QuestionImageBox)).EndInit();
+            this.Text = "Software ";
             ((System.ComponentModel.ISupportInitialize)(this.HangmanImgBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -141,7 +127,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox QuestionImageBox;
         private System.Windows.Forms.Label Vraaglbl;
         private System.Windows.Forms.PictureBox HangmanImgBox;
     }
